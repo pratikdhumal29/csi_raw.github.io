@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+ 
+  <title>Registration</title>
+
+  <style >
+  body{
+    font-family: "Raleway", sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    }
+  </style>
+
+  <SCRIPT type="text/javascript">
+    window.history.forward();
+    function noBack() { window.history.forward(); }
+    
+    var count=0;
+  function getRemaining(){
+    
+    if((document.getElementById("c1").checked == true)|| (document.getElementById("c2").checked == true)|| (document.getElementById("c3").checked == true)|| (document.getElementById("c4").checked == true)|| (document.getElementById("c5").checked == true)|| (document.getElementById("c6").checked == true)|| (document.getElementById("c7").checked == true)|| (document.getElementById("c8").checked == true)||(document.getElementById("c9").checked == true))   
+    {
+      count=count+500;
+      document.getElementById("totalfee").value =count;
+     
+    }
+    
+   
+}
+
+  </SCRIPT>
+</head>
+
+<body>
+<div class="w3-top">
+  <ul class="w3-navbar w3-blue w3-card-2 w3-left-align w3-large">
+    <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+    </li>
+    <li><a href="csi_main.html" class="w3-padding-large w3-white">HOME</a></li>
+    <li class="w3-hide-small"><a href="events.html" class="w3-padding-large w3-hover-white">EVENTS</a></li>
+    <li class="w3-hide-small"><a href="registration.html" class="w3-padding-large w3-hover-white">REGISTRATION</a></li>
+    <li class="w3-hide-small"><a href="comingsoon.html" class="w3-padding-large w3-hover-white">BLITZKRIEG'17</a></li>
+    <li class="w3-hide-small"><a href="team.html" class="w3-padding-large w3-hover-white">OUR TEAM</a></li>
+    <li class="w3-hide-small"><a href="contactus.html" class="w3-padding-large w3-hover-white">CONTACT US</a></li>
+  </ul>
+</div>
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8 center-block">
+        <h2>CSI-REGISTARTION 2016</h2>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <form class="form-horizontal" action="action_page.php" method="post">
+        
+
+         
+
+        <div class="form-group">
+          <label for="name" class="col-sm-2 control-label">Name</label>
+          <div class="col-sm-10">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Name" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="name" class="col-sm-2 control-label">College</label>
+          <div class="col-sm-10">
+            <input type="text" name="college" class="form-control" id="college" placeholder="College" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="name" class="col-sm-2 control-label">Branch</label>
+          <div class="col-sm-10">
+            <input type="text" name="branch" class="form-control" id="branch" placeholder="branch" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="col-sm-2 control-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" name="email" class="form-control" id="email" placeholder="Email" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="contactnum" class="col-sm-2 control-label">Contact Number</label>
+          <div class="col-sm-10">
+            <input type="text" name="contactnum" class="form-control" id="contactnum" placeholder="Contact Number" maxlength="10" minlength="10" required>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          
+          <h3 align="center">EVENTS</h3>
+          <br>
+        
+        </div>
+        
+
+        <div align="center">
+
+        <div style="float:left; width:33.33%">
+         &nbsp &nbsp  &nbsp <input type="checkbox" name="EVENTS" value="VoidFNX" id="c1" onchange="getRemaining()"> CODE O CRATS
+       </div>
+       <div style="float:left; width:33.33%">
+        <input type="checkbox" name="EVENTS" value="CodeCracker" id="c2" onchange="getRemaining()"> CODEJAM
+       </div>
+       <div style="float:left; width:33.33%">
+        <input type="checkbox" name="EVENTS" value="SnoopCode" id="c3" onchange="getRemaining()"> C MASTER
+        </div>
+        </div>
+       <br>
+        
+
+        
+       <div align="center">
+        <div style="float:left; width:33.33%">
+        &nbsp &nbsp<input type="checkbox" name="EVENTS" value="TeachMachine" id="c4" onchange="getRemaining()"> SNOOP CODE
+        </div>
+        <div style="float:left; width:33.33%">
+         &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<input type="checkbox" name="EVENTS" value="DesignNDevelop" id="c5" onchange="getRemaining()"> WEB JUNCTION
+        </div>
+        <div style="float:left; width:33.33%">
+        &nbsp &nbsp &nbsp <input type="checkbox" name="EVENTS" value="QuizUp" id="c6" onchange="getRemaining()"> BUGGS BUNY
+        </div>
+        </div>
+        <br>
+       
+
+        
+       
+        
+
+        
+
+       <div align="center">
+        <div style="float:left; width:33.33%">
+        <input type="checkbox" name="EVENTS" value="Catch'em All" id="c7" onchange="getRemaining()"> CODETHON
+        </div>
+         <div style="float:left; width:33.33%">
+        &nbsp <input type="checkbox" name="EVENTS" value="Degree" id="c8" onchange="getRemaining()""> CODEFAST
+         </div>
+          <div style="float:left; width:33.33%">
+        &nbsp &nbsp<input type="checkbox" name="WORKSHOPS" value="Ethical Hacking Workshop" id="c9" onchange="getRemaining()"> LIGHT CODE
+        </div>
+        </div>
+        
+        <br>
+        <br>
+        <hr>
+
+        <br>
+
+          <div align="center">
+
+                <label >Total Fee</label>
+          
+            <input type="number" name="totalfee"  id="totalfee" required value="" disabled>
+            
+            <button type="submit" class="btn btn-info w3-blue">Submit</button>
+         
+            </div>
+        
+      </form>
+
+    </div>
+
+  </div>
+
+
+</body>
+
+</html>

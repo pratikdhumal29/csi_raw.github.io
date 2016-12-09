@@ -1,0 +1,95 @@
+
+<html>
+
+<head>
+	
+	<title>
+		Welcome to CSI!
+	</title>
+
+	<style type="text/css">
+		
+		.progBar {
+		    width: 100%;
+		    height: 100px;
+		    background: white;
+		    animation: load 6s 1;
+		    position: fixed;
+		    bottom: 20;
+		    left:0;
+		}
+
+		.progBar1 {
+		    width: 100%;
+		    height: 100px;
+		    background: white;
+		    animation: load 6s 1;
+		    position: fixed;
+		    top:0;
+		    left:0;
+		}
+
+		@keyframes load
+		{
+			from {width:0%;}
+			to {width:100%;background-color: blue;}
+		}
+
+		.cf
+		{
+			margin-top: 12%;
+			margin-left: 30%;
+			margin-right: 50%; 
+		}
+
+		.top{
+			width:500px;
+			height:300px;
+			z-index:99;
+			position: absolute;
+			animation: turn 6s 1;
+		}
+
+		@keyframes turn
+		{
+			from {opacity:1;transform: rotate(0deg);}
+			to {opacity:0;transform: rotate(360deg);}
+		}
+
+		.bottom{
+			width:300px;
+			height:300px;
+			margin-left: 100px;
+			z-index:2;
+			position: absolute;	
+			animation: turn2 6s 1;	
+		}
+
+		@keyframes turn2
+		{
+			from {opacity:0;transform: rotate(0deg);}
+			to {opacity:1;transform: rotate(360deg);}
+		}
+
+	</style>
+
+	<script>setTimeout(function(){window.location.href="video.html"},6000);</script>
+
+</head>
+
+
+<body>
+
+<div class="progBar1"></div>
+
+<div class="cf">
+  <img class="top" src="images/ITNU.jpg" />
+  <img class="bottom" src="images/csi_new_logo.jpg" />
+</div>
+
+<div class="progBar"></div>
+
+
+</body>
+
+</html>
